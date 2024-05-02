@@ -22,12 +22,15 @@
 // array lista celle bombe
 let listaB = []
 console.log(listaB);
-// numero casuale da 1 a 100
-let x = Math.floor(Math.random() * 100) + 1;
-listaB.push(x);
-console.log(x);
 
+// ciclo che crea un numero casuale finchè la lunghezza dell'array non è 16
+while (listaB.length < 16) {
+    let x = Math.floor(Math.random() * 100) + 1;
 
+    if (!listaB.includes(x)) {
+        listaB.push(x);
+    } 
+}
 
 
 
@@ -39,13 +42,13 @@ function CreaQuadrato(contenuto) {
     square.innerText = contenuto
     square.classList.add("square");
 
-    square.addEventListener("click", function(){
-    console.log("click", this);
+    square.addEventListener("click", function () {
+        console.log("click", this);
 
-    // aggiungo classe al click
-    this.classList.toggle("selezionata");
-    
-        });
+        // aggiungo classe al click
+        this.classList.toggle("selezionata");
+
+    });
 
     // restituisco la funzione al chiamante
     return square;
