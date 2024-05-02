@@ -32,6 +32,8 @@ body{
 	border: solid 1px rgb(23, 68, 247);
 }
 
+
+
 .selezionata{
     background-color: rgb(23, 68, 247);
 }
@@ -54,6 +56,10 @@ body{
 
 .selezionata{
     background-color: rgb(23, 68, 247);
+}
+
+.selezionataBomba{
+    background-color: rgb(253, 0, 0);
 }
 
 

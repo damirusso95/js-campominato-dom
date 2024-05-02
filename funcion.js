@@ -6,31 +6,21 @@
 // Al termine della partita il software deve comunicare il punteggio, cioè il numero di volte che l’utente ha cliccato su una cella che non era una bomba.
 
 
-// MILESTONE #1: GENERARE LE BOME
-// All'avvio della partita abbiamo bisogno di generare una lista di celle contenenti bombe. Le bombe:
-// devono essere casuali
-// devono essere sempre 16
-// non devono includere ripetizioni, sono tutte diverse
-// devono essere un numero, che rappresenti una cella esistente (es. tra 1 e 100)
-// Ragionate bene sul da farsi. Potete anche testare una funzioncina in un file separato o in console.
-// Potete pensare a un ciclo che finchè non raggiunge lo scopo (16 bombe) continua a:
-// generare numeri casuali
-// controllare se sono già nella lista di bombe
-// aggiungere il numero alla lista o ignorarlo, a seconda del caso
+// MILESTONE #2: CONTROLLARE LE CELLE
+// Al click su una cella dovremmo controllare se QUELLA cella è inclusa nell'elenco di bombe. In baso al caso aggiungiamo coloriamo la cella di azzurro o di rosso.
 
 
-// array lista celle bombe
-let listaB = []
-console.log(listaB);
+// // array lista celle bombe
+// let listaB = []
+// console.log(listaB);
+// // ciclo che crea un numero casuale finchè la lunghezza dell'array non è 16
+// while (listaB.length < 16) {
+//     let x = Math.floor(Math.random() * 100) + 1;
 
-// ciclo che crea un numero casuale finchè la lunghezza dell'array non è 16
-while (listaB.length < 16) {
-    let x = Math.floor(Math.random() * 100) + 1;
-
-    if (!listaB.includes(x)) {
-        listaB.push(x);
-    } 
-}
+//     if (!listaB.includes(x)) {
+//         listaB.push(x);
+//     }
+// }
 
 
 
@@ -53,5 +43,7 @@ function CreaQuadrato(contenuto) {
     // restituisco la funzione al chiamante
     return square;
 }
+
+
 
 

@@ -18,6 +18,18 @@ btnStart.addEventListener("click", function () {
             griglia.append(elemento);
         }
 
+        // array lista celle bombe
+        let listaB = []
+        console.log(listaB);
+        // ciclo che crea un numero casuale finchè la lunghezza dell'array non è 16
+        while (listaB.length < 16) {
+            let x = Math.floor(Math.random() * 100) + 1;
+
+            if (!listaB.includes(x)) {
+                listaB.push(x);
+            }
+        }
+
     }
     else if (select.value == "medium") {
         // difficoltà normale
